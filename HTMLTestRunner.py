@@ -194,7 +194,7 @@ class Template_mixin(object):
     %(stylesheet)s
 </head>
 <body>
-<script type="text/javascript" src="../scripts/result_report.js"></script>
+<script type="text/javascript" src="../../ws/reports/scripts/result_report.js"></script>
 
 %(heading)s
 %(report)s
