@@ -1,6 +1,6 @@
 __author__ = 'nicholas.redmond'
 import os
-os.system("pip install selenium")
+os.system("pip install --user selenium")
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
