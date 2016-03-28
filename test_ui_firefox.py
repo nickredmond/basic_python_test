@@ -31,6 +31,7 @@ class ContactPageTests(unittest.TestCase):
 output_file = open('reports/html/index.html', 'wb')
 runner = HTMLTestRunner.HTMLTestRunner(stream=output_file, title="Nick Redmond's First HTML Output",
                                        description="This is a test of HTML output in Python automated tests.")
+runner.STYLESHEET_TMPL = "<link rel='stylesheet' href='../style/result_report.css' type='text/css'>"
 
 suite = unittest.TestSuite()
 suite.addTest(ContactPageTests("test_schedule_demo_label_visible"))
