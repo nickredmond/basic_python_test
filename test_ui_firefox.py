@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotVisibleException
 
+# Random comment because I can
 
 class ContactPageTests(unittest.TestCase):
     def setUp(self):
