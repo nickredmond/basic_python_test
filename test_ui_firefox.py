@@ -1,6 +1,4 @@
 __author__ = 'nicholas.redmond'
-# import os
-# os.system("pip install --user selenium")
 
 import unittest
 import HTMLTestRunner
