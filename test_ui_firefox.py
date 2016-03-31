@@ -9,7 +9,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotVisibleException
 
 class ContactPageTests(unittest.TestCase):
-    """ Contains all tests for the contact page of the Dealertrack marketing site """
+    """ Contains all tests for the contact page of the Dealertrack marketing site, at dealertrack.com """
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(10)
