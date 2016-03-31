@@ -7,11 +7,13 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import ElementNotVisibleException
 
 class ContactPageTests(unittest.TestCase):
+    """ Contains all tests for the contact page of the Dealertrack marketing site, at dealertrack.com """
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(10)
 
     def test_schedule_demo_label_visible(self):
+        """ Verifies the 'Schedule a Product Demo' label is visible on the contact page """
         self.driver.get("https://www.dealertrack.com")
         self.driver.find_element(By.XPATH, ".//*[@id='bs-example-navbar-collapse-1']//*[contains(@href, '/contact.html')]").click()
 
